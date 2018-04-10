@@ -1,0 +1,27 @@
+html,body,ul,ol,li,table,p,h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font: 14px/1 arial;
+}
+li{
+	list-style: none;
+}
+button,input{
+	outline: none;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	display: table;
+	content: '';
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
