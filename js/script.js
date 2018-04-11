@@ -1,5 +1,5 @@
 $('#btn').click(function(){
-	alert('123');
+	xhr.onload();
 })
 var xhr = new XMLHttpRequest();
 xhr.open('GET','../data/test.json',true);
