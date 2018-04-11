@@ -7,7 +7,7 @@ $('#btn').click(function(){
 		
 			var newContent = '';
 	
-			newContent = '<div>' + resposeObject.events.length + '</div>';
+			newContent = '<div>' + resposeObject.events[0].location + '</div>';
 		
 			document.getElementById('resText').innerHTML = newContent;
 		}
