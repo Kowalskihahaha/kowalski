@@ -1,15 +1,15 @@
-$('#btn').click(function(){
-	xhr.onload();
-})
-var xhr = new XMLHttpRequest();
-xhr.open('GET','../data/test.json',true);
-xhr.send(null);
-
-xhr.onload = function(){
-	if(xhr.status === 200){
-		var jsonObject;
-		jsonObject = JSON.parse(xhr.responseType);
-	}
-	document.getElementById('jsonText').innerHTML(jsonObject.project[0].time);
+function	 Ajax(){
+	
 }
-
+var xmlHttpReq = null;
+xmlHttpReq = new XMLHttpRequest();
+xmlHttpReq.open('GET','test.php',true);
+xmlHttpReq.onreadystatechange = RequestCallBack;
+xmlHttpReq.send(null);
+function RequestCallBack(){
+	if(xmlHttpReq.readyState === 4){
+		if(xmlHttpReq.status === 200){
+			document.getElementById('resText').innerHTML = xmlHttpReq.responseText;
+		}
+	}
+}
